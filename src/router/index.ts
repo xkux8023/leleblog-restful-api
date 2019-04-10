@@ -9,8 +9,8 @@ router
   .get('/', async (ctx: Koa.Context) => {
     ctx.body = 'GET ALL'
   })
-  .post('/login', userController.postLogin) // 登录
-  .post('/signup', userController.createUser) // 注册
-  .get('/user', userController.getUserInfo) // 获取用户信息
+  .post('/login', userController.login) // 登录
+  .post('/register', userController.register) // 注册
+  .get('/current', userController.getUserInfo) // 获取用户信息
 
 export default router

@@ -19,7 +19,7 @@ mongoose
     console.log(err)
   })
 
-app.use(bodyParser)
+app.use(bodyParser())
 app.use(koaStatic('./www'))
 app.use(router.routes()).use(router.allowedMethods())
 

@@ -2,10 +2,10 @@ import * as Koa from 'koa'
 import userModel from '../model/user.model'
 
 export default class userController {
-  static postLogin(ctx: Koa.Context) {
+  static login(ctx: Koa.Context) {
     ctx.body = 'postLogin'
   }
-  static createUser(ctx: Koa.Context) {
+  static register(ctx: Koa.Context) {
     ctx.body = 'createUser'
   }
   static getUserInfo(ctx: Koa.Context) {
